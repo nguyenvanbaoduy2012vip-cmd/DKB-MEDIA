@@ -37,6 +37,71 @@
 .light-theme body{background:radial-gradient(ellipse at 65% -15%,#dcecff 0,transparent 42%),var(--bg)}.light-theme .top{background:#ffffffed}.light-theme .search input,.light-theme .field input,.light-theme .field textarea,.light-theme .field select{background:#f4f7fb;color:#17263a;border-color:#cbd7e5}.light-theme .btn,.light-theme .tab,.light-theme .vactions button{background:#e8f0f9;color:#20344d}.light-theme .nav{color:#42546b}.light-theme .nav:hover,.light-theme .nav.active{background:#dcecff;color:#164d83}.light-theme .dialog,.light-theme .modalvideo{background:#fff;color:#17263a;border-color:#d5dfeb}.light-theme .adminbox,.light-theme .stat,.light-theme .notice{background:#f4f7fb!important;color:#17263a}.light-theme .mobile{background:#ffffffed}.light-theme .filepick{background:#eaf4ff;color:#164b7c!important}.light-theme .termsbox{background:#f5f8fc}
 @media(max-width:760px){.channelHero{gap:9px;padding:5px 0 8px}.channelHero .avatar{width:58px;height:58px;flex-basis:58px}.channelHero h2{font-size:17px}.stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.stats .stat{padding:9px 7px;font-size:11px}.stats .stat strong{font-size:18px}.channel{padding:7px 0}.dialog{padding:13px;border-radius:15px}.actions .gearbtn{display:inline-flex!important;padding:8px 10px!important}.adminnav{grid-template-columns:repeat(2,minmax(0,1fr))}.adminhead{align-items:flex-start;flex-direction:column}.metricrow{grid-template-columns:1fr auto auto}.dialog{padding:17px}}
 
+
+/* DKB MEDIA compact mobile spacing + readable comments */
+@media(max-width:760px){
+  .main{padding:12px 12px 82px}
+  .hero{margin-bottom:13px;gap:9px;align-items:center}
+  .hero h1{margin:0 0 3px;line-height:1.12}
+  .hero .muted{margin:0;line-height:1.3}
+  .tabs{gap:6px;margin-bottom:13px;padding-bottom:2px}
+  .tab{padding:8px 13px}
+  .grid{gap:14px 10px}
+  .vinfo{padding:7px 1px 2px;gap:7px}
+  .vinfo h3{line-height:1.28;margin:0 0 3px}
+  .vinfo p{line-height:1.25;margin:2px 0}
+  .channel-name-line{line-height:1.2}
+  .channel-user-id{margin-top:2px;line-height:1.2}
+  .modal{padding:7px}
+  .modalvideo{padding:11px;border-radius:15px;max-height:94dvh}
+  .modalvideo video{max-height:38dvh;border-radius:10px}
+  .modalvideo h2{font-size:21px;line-height:1.25;margin:10px 0 5px}
+  #watchStats{margin:5px 0 8px;line-height:1.3}
+  .channel{gap:8px;padding:8px 0}
+  .channel .avatar{width:48px;height:48px;flex:0 0 48px}
+  .channel h3{margin:0 0 3px;line-height:1.2}
+  .vactions{gap:6px;margin:8px 0}
+  .vactions button{padding:8px 10px;font-size:14px}
+  #watchDesc{margin:8px 0;line-height:1.4}
+  #watchCode{line-height:1.3}
+  .comment-open-btn{padding:8px 12px;margin:2px 0}
+  .comments-panel{margin:9px 0;padding:11px}
+  .comments-panel h3{margin:0 0 8px!important}
+  .comments-panel .field{margin:8px 0}
+  .comment{padding:8px 0}
+  .comment-children{margin-left:16px;padding-left:8px}
+  .adminbox{padding:11px;margin:9px 0}
+  .adminbox h3{margin:0 0 8px}
+}
+.light-theme .comments-panel{background:#f3f7fc;color:#17263a;border-color:#d5dfeb}
+.light-theme .comments-panel .muted,
+.light-theme .comments-panel .comment,
+.light-theme .comments-panel h3,
+.light-theme .comments-panel .comment-head,
+.light-theme .comments-panel .comment-body{color:#26384f}
+.light-theme .comments-panel .reply-compose input,
+.light-theme .comments-panel #commentText{background:#fff;color:#17263a;border-color:#cbd7e5}
+.light-theme .comments-panel .comment{border-bottom-color:#d5dfeb}
+
+
+/* DKB MEDIA mobile polish: reduce excessive vertical gaps and keep controls grouped */
+@media(max-width:760px){
+ .top{height:58px;padding:0 10px;gap:8px}.logo{font-size:18px;letter-spacing:.5px}.logo small{font-size:7px;letter-spacing:2px}
+ .actions{gap:5px}.actions .btn,.actions .primary{padding:7px 9px;font-size:12px}.actions .avatar{width:31px;height:31px}
+ .shell{display:block;min-height:calc(100vh - 58px)}aside{display:none}.main{padding:10px 12px 82px}
+ .hero{margin:0 0 10px;align-items:center}.hero h1{font-size:25px}.hero .primary{padding:9px 12px;max-width:120px;line-height:1.2}
+ .tabs{margin:0 0 12px;gap:6px}.tab{padding:8px 12px;font-size:14px}
+ .grid{gap:12px 9px}.card{min-width:0}.thumb{border-radius:12px}.vinfo{padding:6px 0 0;gap:7px}.vinfo .avatar{width:31px;height:31px;flex:0 0 31px}.vinfo h3{font-size:13px;line-height:1.25;margin:0 0 3px}.vinfo p{font-size:11px;line-height:1.25;margin:2px 0}.channel-user-id{font-size:11px}
+ .modal{padding:5px}.modalvideo{padding:10px;max-height:95dvh;gap:0}.modalvideo h2{font-size:20px;margin:8px 0 4px}.modalvideo video{max-height:34dvh}
+ #watchStats{margin:3px 0 7px}.channel{padding:7px 0;gap:8px}.channel .avatar{width:43px;height:43px;flex:0 0 43px}.channel .grow{min-width:0}.channel b{line-height:1.2}.channel .muted{line-height:1.25}
+ .vactions{display:flex;gap:6px;margin:7px 0 8px}.vactions button{padding:7px 10px;font-size:13px;line-height:1.15}
+ #watchDesc{margin:7px 0;line-height:1.35}#watchCode{line-height:1.2}.comment-open-btn{margin:3px 0;padding:8px 12px}
+ .comments-panel{margin:8px 0;padding:10px}.comments-panel h3{margin:0 0 7px!important}.comments-panel .field{margin:7px 0}.comment{padding:7px 0}.comment-head{gap:6px;flex-wrap:wrap}.comment-head .avatar{width:28px;height:28px;flex-basis:28px}.comment-body{padding-left:34px}.comment-tools{padding-left:34px}.comment-children{margin-left:12px;padding-left:7px}.reply-compose{margin-left:34px}
+ .adminbox{margin:8px 0;padding:10px}.adminbox h3{margin:0 0 7px}
+}
+.comments-panel{color:var(--txt)}.comments-panel h3,.comments-panel .comment-head,.comments-panel .comment-body{color:inherit}.comments-panel .comment{color:inherit}.comments-panel .muted{color:var(--muted)}
+.light-theme .comments-panel .comment-head,.light-theme .comments-panel .comment-body,.light-theme .comments-panel h3,.light-theme .comments-panel .comment{color:#26384f!important}
+.light-theme .comments-panel .comment-tools button{color:#126bc1}
 </style></head>
 <body>
 <header class="top"><div class="logo">DKB MEDIA<small>WATCH · CREATE · CONNECT</small></div><div class="search"><input id="search" placeholder="Tìm video, mã video hoặc @userid..."></div><div class="actions"><button class="btn gearbtn" onclick="openSettings()" title="Cài đặt giao diện">⚙</button><button class="btn" onclick="openNotifications()" title="Thông báo">♧ <span id="noticeCount"></span></button><button class="btn" onclick="openUpload()">＋ Đăng video</button><button class="primary" onclick="openUpload()">Tải lên</button><img id="topAvatar" class="avatar" onclick="openProfile()" title="Hồ sơ"></div></header>
@@ -98,7 +163,7 @@ async function shortShare(id){let url=location.href.split('#')[0]+'#video='+id;t
 
 function fmt(n){return Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0')}
 function openUpload(){if(!user){show('authModal');return}show('uploadModal')}
-async function publishVideo(){let f=$('videoFile').files[0],thumb=$('videoThumbnail')?.files?.[0],title=$('videoTitle').value.trim();if(!$('termsAgree')?.checked){$('uploadMsg').textContent='Bạn cần đồng ý với Điều khoản và Chính sách trước khi đăng video.';return}if(!f||!title){$('uploadMsg').textContent='Chọn video và nhập tiêu đề.';return}if(!f.type.startsWith('video/')||f.size>500*1024*1024){$('uploadMsg').textContent='Chỉ nhận video tối đa 500 MB.';return}if(thumb&&(!thumb.type.startsWith('image/')||thumb.size>5*1024*1024)){$('uploadMsg').textContent='Thumbnail phải là ảnh và có dung lượng tối đa 5 MB.';return}$('publishBtn').disabled=true;$('publishBtn').textContent='Đang tải lên...';let videoPath=null,thumbPath=null;try{videoPath=user.id+'/'+crypto.randomUUID()+'.'+(f.name.split('.').pop()||'mp4');let up=await sb.storage.from('videos').upload(videoPath,f,{upsert:false});if(up.error)throw up.error;let url=sb.storage.from('videos').getPublicUrl(videoPath).data.publicUrl;let thumbnailUrl=null;if(thumb){thumbPath=user.id+'/'+crypto.randomUUID()+'.'+((thumb.name.split('.').pop()||'jpg').toLowerCase());let tu=await sb.storage.from('thumbnails').upload(thumbPath,thumb,{upsert:false,contentType:thumb.type});if(tu.error)throw tu.error;thumbnailUrl=sb.storage.from('thumbnails').getPublicUrl(thumbPath).data.publicUrl}let duration=await getDuration(f);let payload={user_id:user.id,title,description:$('videoDesc').value.trim(),video_url:url,storage_path:videoPath,duration_seconds:duration,status:'published',terms_accepted_at:new Date().toISOString()};if(thumbnailUrl)payload.thumbnail_url=thumbnailUrl;let r=await sb.from('videos').insert(payload);if(r.error)throw r.error;hide('uploadModal');$('videoFile').value='';$('videoThumbnail').value='';$('videoTitle').value='';$('videoDesc').value='';$('termsAgree').checked=false;$('videoFileName').textContent='Chưa chọn video · Tối đa 500 MB';$('videoThumbnailName').textContent='Chưa chọn ảnh · JPG, PNG hoặc WebP · Tối đa 5 MB';$('videoThumbnailPreview').style.display='none';await loadVideos();render();toast('Đã đăng video lên DKB MEDIA')}catch(e){if(videoPath)await sb.storage.from('videos').remove([videoPath]);if(thumbPath)await sb.storage.from('thumbnails').remove([thumbPath]);$('uploadMsg').textContent=(e.message||'Không thể tải video lên.')+(thumb?' · Nếu lỗi thumbnail_url hoặc bucket thumbnails, hãy chạy file SQL cập nhật.':'')}finally{$('publishBtn').disabled=false;$('publishBtn').textContent='Đăng video'}}
+async function publishVideo(){let f=$('videoFile').files[0],thumb=$('videoThumbnail')?.files?.[0],title=$('videoTitle').value.trim();if(!$('termsAgree')?.checked){$('uploadMsg').textContent='Bạn cần đồng ý với Điều khoản và Chính sách trước khi đăng video.';return}if(!f||!title){$('uploadMsg').textContent='Chọn video và nhập tiêu đề.';return}if(!f.type.startsWith('video/')||f.size>500*1024*1024){$('uploadMsg').textContent='Chỉ nhận video tối đa 500 MB.';return}if(thumb&&(!thumb.type.startsWith('image/')||thumb.size>5*1024*1024)){$('uploadMsg').textContent='Thumbnail phải là ảnh và có dung lượng tối đa 5 MB.';return}$('publishBtn').disabled=true;$('publishBtn').textContent='Đang tải lên...';$('uploadMsg').textContent='Đang tải video lên...';let videoPath=null,thumbPath=null,stage='video';try{videoPath=user.id+'/'+crypto.randomUUID()+'.'+(f.name.split('.').pop()||'mp4');let up=await sb.storage.from('videos').upload(videoPath,f,{upsert:false});if(up.error)throw new Error('Tải video thất bại: '+up.error.message);let url=sb.storage.from('videos').getPublicUrl(videoPath).data.publicUrl;let thumbnailUrl=null,thumbWarning='';if(thumb){stage='thumbnail';thumbPath=user.id+'/'+crypto.randomUUID()+'.'+((thumb.name.split('.').pop()||'jpg').toLowerCase());let tu=await sb.storage.from('thumbnails').upload(thumbPath,thumb,{upsert:false,contentType:thumb.type});if(tu.error){thumbWarning='Video sẽ được đăng không có thumbnail vì: '+tu.error.message;await sb.storage.from('thumbnails').remove([thumbPath]);thumbPath=null}else thumbnailUrl=sb.storage.from('thumbnails').getPublicUrl(thumbPath).data.publicUrl}stage='database';let duration=await getDuration(f);let payload={user_id:user.id,title,description:$('videoDesc').value.trim(),video_url:url,storage_path:videoPath,duration_seconds:duration,status:'published',terms_accepted_at:new Date().toISOString()};if(thumbnailUrl)payload.thumbnail_url=thumbnailUrl;let r=await sb.from('videos').insert(payload);if(r.error)throw new Error('Lưu thông tin video thất bại: '+r.error.message);videoPath=null;hide('uploadModal');$('videoFile').value='';$('videoThumbnail').value='';$('videoTitle').value='';$('videoDesc').value='';$('termsAgree').checked=false;$('videoFileName').textContent='Chưa chọn video · Tối đa 500 MB';$('videoThumbnailName').textContent='Chưa chọn ảnh · JPG, PNG hoặc WebP · Tối đa 5 MB';$('videoThumbnailPreview').style.display='none';await loadVideos();render();toast(thumbWarning||'Đã đăng video lên DKB MEDIA');}catch(e){if(videoPath)await sb.storage.from('videos').remove([videoPath]);if(thumbPath)await sb.storage.from('thumbnails').remove([thumbPath]);let msg=e.message||'Không thể tải video lên.';if(msg.toLowerCase().includes('failed to fetch'))msg='Không kết nối được Supabase. Kiểm tra mạng, URL và publishable key.';$('uploadMsg').textContent=(stage==='thumbnail'?'Lỗi thumbnail: ':stage==='database'?'Lỗi cơ sở dữ liệu: ':'Lỗi tải video: ')+msg+(stage==='database'?' · Kiểm tra cột thumbnail_url và SQL cập nhật.':'')}finally{$('publishBtn').disabled=false;$('publishBtn').textContent='Đăng video'}}
 function getDuration(f){return new Promise(resolve=>{let v=document.createElement('video'),u=URL.createObjectURL(f);v.preload='metadata';v.onloadedmetadata=()=>{let d=Math.round(v.duration)||0;URL.revokeObjectURL(u);resolve(d)};v.onerror=()=>resolve(0);v.src=u})}
 
 let dkbViewTracker={videoId:null,credited:false,lastTime:null,playedSeconds:0};
